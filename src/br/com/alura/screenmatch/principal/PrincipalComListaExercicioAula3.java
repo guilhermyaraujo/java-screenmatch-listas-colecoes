@@ -23,8 +23,7 @@ public class PrincipalComListaExercicioAula3 {
 
         for (Titulo item : lista) {
             System.out.println("Nome: " + item.getNome());
-            if (item instanceof Filme) {
-                Filme filme = (Filme) item;
+            if (item instanceof Filme filme) {
                 System.out.println("Classificação: " + filme.getClassificacao());
             }
         }
