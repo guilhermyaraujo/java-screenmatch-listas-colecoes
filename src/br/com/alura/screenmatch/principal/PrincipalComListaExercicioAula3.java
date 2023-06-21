@@ -5,6 +5,7 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComListaExercicioAula3 {
     public static void main(String[] args) {
@@ -20,6 +21,14 @@ public class PrincipalComListaExercicioAula3 {
         lista.add(favorito);
         lista.add(outro);
         lista.add(serie);
+
+//        ordenando com Comparable
+
+        Collections.sort(lista);
+        System.out.println(lista);
+
+
+
 
         for (Titulo item : lista) {
             System.out.println("Nome: " + item.getNome());
